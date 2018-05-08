@@ -1,0 +1,218 @@
+img {
+width: 100%;
+
+}
+
+body {
+background: #fff;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+padding:  0 10px 
+}
+
+/* Create four fucking equal columns that sits next to each other */
+
+.column {
+ flex: 25%;
+ max-width: 25%;
+ padding: 0 5px;
+}
+
+.column img {
+margin-top: 15px;
+vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media (max-width: 800px) {
+.column {
+flex: 50%;
+max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 800px) {
+.column {
+flex: 100%;
+max-width: 100px
+}
+}
+
+
+.secondpart {
+width: 100%;
+padding: 30px;
+background-color: 	#65737e;
+}
+
+ p.secondp {
+text-align: center;
+font-size: 15px;
+ }
+
+
+
+
+
+
+
+/*-------------------------------------- footer ----------------------------------*/
+
+h2 {
+color: #000;
+}
+
+.aboutmepage {
+    background-color: #fff;
+    text-align: center;
+    padding: 10%;
+    color: #4c4c4c
+
+}
+
+.aboutmepage a.innericons {
+color: #000;
+}
+
+p.footertext {
+  font-family: 'Gothic A1', sans-serif;
+font-size: 15px;
+}
+
+hr {
+color: #fff;
+}
+
+
+i {
+padding: 5px;
+}
+
+.aboutmetitle {
+ font-family: 'Gugi', cursive;
+ font-size: 45px;
+ text-align: center;
+}
+
+/*-------------- Navbar -----------------------*/
+a.nav-link {
+    font-family: 'Gugi', cursive;
+    }
+     .navbar .navbar-brand {
+         color: #000;
+         font-weight: bold;
+         font-family: 'Gugi', cursive;
+       
+    }
+    
+    .navbar-collpase {
+        display: flex;
+        justify-content: center;
+        
+        }
+    
+    .navbar .navbar-nav .nav-link {
+     font-family: 'Gugi', cursive;
+    color: #000
+    }
+    
+    li.nav-item{
+        border:none;
+        position: relative;
+      }
+      li.nav-item:hover{
+        border: none;
+      }
+      li:hover {
+        border-bottom: 5px solid #FFFFFF;
+      }
+      .nav-item::after{
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 5px;
+        left: 50%;
+        bottom:0;
+        background-color: #000;
+        transition: all ease-in-out .2s;
+      }
+      .nav-item:hover::after{
+        width: 100%;
+        left: 0;
+      }
+    
+      .navbar .navbar-nav .nav-link {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 15px;
+        
+      }
+
+      /* .navbar-toggler-icon {
+      color: #000
+      } */
+
+
+      .container.gallery-container {
+        background-color: #fff;
+        min-height: 100vh;
+        padding: 30px 30px 30px 30px;
+        width: 100%;
+       
+      }
+      
+      
+      h5.gallerytitle {
+      text-align: center;
+      font-family: 'Gugi', cursive;
+      color: #fff;
+      font-size: 25px
+      }
+      
+      p.gallerytext {
+        text-align: center;
+        font-family: 'Gugi', cursive;
+        font-size: 10px;
+        color: #fff
+      }
+
+      .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+      }
+    
+    
+
+    h4 {
+      text-align: center;
+      font-family: 'Gugi', cursive;
+
+    }
+
+    #part1 {
+    padding-top: 80px
+    }
+
+    #part2 {
+    padding-top: 80px
+    }
+
+    #part3 {
+    padding-top: 80px
+    }
+
+    #part4 {
+    padding-top: 80px
+    }
+
+    #footerpart {
+      padding-top: 80px
+    }
+
+    .logo {
+      padding-bottom: 30px
+    }
