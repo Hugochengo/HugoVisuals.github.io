@@ -216,3 +216,11 @@ a.nav-link {
     .logo {
       padding-bottom: 30px
     }
+
+    a {
+      color: #000
+    }
+
+    a :hover {
+      color: #E75480
+    }
