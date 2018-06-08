@@ -152,8 +152,8 @@
 
 
 .project1p {
-margin: 0 auto;
-text-align: center;
+
+text-align: left;
 font-family: 'Gugi', cursive;
 }
 
@@ -288,6 +288,12 @@ margin-bottom: 200px;
   animation: blinking 1.2s infinite;
   
 }
+
+
+.inspirationp {
+  text-align: left;
+  }
+
 
 
 

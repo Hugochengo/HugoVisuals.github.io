@@ -66,6 +66,8 @@ font-size: 15px;
 
 h2 {
 color: #000;
+font-size: 40px;
+text-align: center;
 }
 
 .aboutmepage {
@@ -83,10 +85,15 @@ color: #000;
 p.footertext {
   font-family: 'Gothic A1', sans-serif;
 font-size: 15px;
+text-align: left;
+margin-left: 250px;
 }
+
+
 
 hr {
 color: #fff;
+height: 10px;
 }
 
 
@@ -190,6 +197,7 @@ a.nav-link {
     h4 {
       text-align: center;
       font-family: 'Gugi', cursive;
+      font-size: 30px
 
     }
 
@@ -223,4 +231,28 @@ a.nav-link {
 
     a :hover {
       color: #E75480
+    }
+
+    .skills {
+      width: 400px;
+      height: 600px;
+    }
+
+    .aboutmehr{
+      border: none;
+      height: 5px;
+      color: #d3d3d3; 
+      background-color: #d3d3d3;
+      width: 50px;
+      margin-top: 30px;
+      margin-bottom: 30px
+    }
+
+    .progress {
+    margin: 40px;
+    
+    }
+
+    .progress-bar {
+      background-color: #262626;
     }
