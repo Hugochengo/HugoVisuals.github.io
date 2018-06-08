@@ -86,7 +86,7 @@ p.footertext {
   font-family: 'Gothic A1', sans-serif;
 font-size: 15px;
 text-align: left;
-margin-left: 250px;
+
 }
 
 
@@ -255,4 +255,10 @@ a.nav-link {
 
     .progress-bar {
       background-color: #262626;
+    }
+
+    .copyright {
+      text-align: center;
+      font-family: 'Gothic A1', sans-serif;
+      font-size: 15px;
     }
