@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mainpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://use.fontawesome.com/be707ba40e.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="preset.css">
+    <script src="main.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar navbar-light bg-white fixed-top" id="mainnav">
+
+    <a class="navbar-brand" href="#">HUGO.VISUALS</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"> PHOTOGRAPHY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="web.html">WEB DEVELOPMENT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="presets.html">PRESETS</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="bgimg">
+        <div class="middle">
+            <h1>HUGO.VISUALS
+                <br> PRESET PACK</h1>
+             
+
+            <h3>COMING SOON</h1>
+                <hr>
+                <p id="demo" style="font-size: 30px"></p>
+
+        </div>
+    </div>
+
+    <script>
+            window.sr = ScrollReveal();
+            sr.reveal('h1', {
+                duration: 1000,
+                delay: 200,
+                origin: 'top',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+
+            sr.reveal('h3', {
+                duration: 1000,
+                delay: 200,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+
+            sr.reveal('#demo', {
+                duration: 1200,
+                delay: 1200,
+                origin: 'bottom',
+                distance: '500px',
+                viewFactor: 0.2
+            });
+    
+        </script>
+
+    <script>
+
+        var countDownDate = new Date("AUG 12, 2018 00:00:00").getTime();
+        var countDownfunction = setInterval(function () {
+
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("demo").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s";
+
+            if (distance < 0) {
+                clearInterval(countDownfunction);
+                document.getElementById("demo").innerHTML = "HAPPY EDITING";
+            }
+        }, 1000);
+
+
+    </script>
+
+    
+
+
+
+
+</body>
+
+</html>

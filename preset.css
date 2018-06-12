@@ -1,0 +1,135 @@
+a.nav-link {
+    font-family: 'Gugi', cursive;
+    }
+     .navbar .navbar-brand {
+         color: #000;
+         font-weight: bold;
+         font-family: 'Gugi', cursive;
+       
+    }
+    
+    .navbar-collpase {
+        display: flex;
+        justify-content: center;
+        
+        }
+    
+    .navbar .navbar-nav .nav-link {
+     font-family: 'Gugi', cursive;
+    color: #000
+    }
+    
+    li.nav-item{
+        border:none;
+        position: relative;
+      }
+      li.nav-item:hover{
+        border: none;
+      }
+      li:hover {
+        border-bottom: 5px solid #FFFFFF;
+      }
+      .nav-item::after{
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 5px;
+        left: 50%;
+        bottom:0;
+        background-color: #000;
+        transition: all ease-in-out .2s;
+      }
+      .nav-item:hover::after{
+        width: 100%;
+        left: 0;
+      }
+    
+      .navbar .navbar-nav .nav-link {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 15px;
+        
+      }
+
+      /* .navbar-toggler-icon {
+      color: #000
+      } */
+
+
+      .container.gallery-container {
+        background-color: #fff;
+        min-height: 100vh;
+        padding: 30px 30px 30px 30px;
+        width: 100%;
+       
+      }
+      
+      
+      h5.gallerytitle {
+      text-align: center;
+      font-family: 'Gugi', cursive;
+      color: #fff;
+      font-size: 25px
+      }
+      
+      p.gallerytext {
+        text-align: center;
+        font-family: 'Gugi', cursive;
+        font-size: 10px;
+        color: #fff
+      }
+
+      .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+      }
+    
+
+
+body, html {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+.bgimg {
+ background-image: url("images/capetown.jpg");
+ height: 100%;
+ background-position: center;
+ background-size: cover;
+ position: relative;
+ color: #fff;
+ font-family: 'Gugi', cursive;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h3 {
+font-size: 40px;
+letter-spacing: 30px;
+font-weight: 100;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 30px;
+    font-weight: 100;
+    text-align: center;
+    }
+    
+
+#demo{
+ font-weight: lighter;
+ letter-spacing: 5px;
+ font-family: 'Cousine', monospace;
+}
+
+hr {
+ margin:  20px auto;
+ width: 80%;
+ border: 1.5px solid #fff;
+
+}
