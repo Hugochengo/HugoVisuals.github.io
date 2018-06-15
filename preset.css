@@ -50,86 +50,69 @@ a.nav-link {
         
       }
 
-      /* .navbar-toggler-icon {
-      color: #000
-      } */
-
-
-      .container.gallery-container {
-        background-color: #fff;
-        min-height: 100vh;
-        padding: 30px 30px 30px 30px;
-        width: 100%;
-       
-      }
       
       
-      h5.gallerytitle {
-      text-align: center;
-      font-family: 'Gugi', cursive;
-      color: #fff;
-      font-size: 25px
-      }
-      
-      p.gallerytext {
-        text-align: center;
-        font-family: 'Gugi', cursive;
-        font-size: 10px;
-        color: #fff
-      }
-
       .navbar-light .navbar-toggler {
         color: rgba(0,0,0,.5);
       }
-    
 
+      body {
+        background-color: #000;
+        color: #fff
+        }
+        
+        
+        
+        
+        .line {
+            position: relative;
+            font-family: 'Gugi', cursive;
+            padding-top: 200px;
+            width: 24em;
+            margin: 100px auto;
+            margin-bottom: 0px;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            font-size: 250%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;transform: translateY(-10%);
+        }
+        
+        .anim-typewriter {
+        animation: typewriter 4s steps(35) 1s 1 normal both,
+        blinkTextCursor 500ms steps(35) infinite normal;
+        
+        }
+        
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 16em;
+            }
+        }
+        
+        @keyframes blinkTextCursor {
+            from {
+                border-right-color: rgba(255, 255, 255, 0.75);
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+        
+        #demo{
+            font-weight: lighter;
+            letter-spacing: 5px;
+            font-family: 'Gugi', cursive;
+            text-align: center;
+            margin-top: 10px;
+            margin: 0 auto;
+           }
 
-body, html {
-height: 100%;
-margin: 0;
-padding: 0;
-}
-
-.bgimg {
- background-image: url("images/capetown.jpg");
- height: 100%;
- background-position: center;
- background-size: cover;
- position: relative;
- color: #fff;
- font-family: 'Gugi', cursive;
-}
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-h3 {
-font-size: 40px;
-letter-spacing: 30px;
-font-weight: 100;
-}
-
-h1 {
-    font-size: 40px;
-    letter-spacing: 30px;
-    font-weight: 100;
-    text-align: center;
-    }
-    
-
-#demo{
- font-weight: lighter;
- letter-spacing: 5px;
- font-family: 'Cousine', monospace;
-}
-
-hr {
- margin:  20px auto;
- width: 80%;
- border: 1.5px solid #fff;
-
-}
+           hr {
+           
+               width: 20%;
+               border: 1.5px solid #fff;
+           }

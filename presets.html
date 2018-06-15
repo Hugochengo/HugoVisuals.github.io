@@ -36,41 +36,55 @@
                 <a class="nav-link" href="aboutme.html">ABOUT ME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="presets.html">PRESETS</a>
+                <a class="nav-link" href="presets.html">COMINGSOON</a>
             </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="presethome.html">PRESETS</a>
+                </li>
 
         </ul>
     </div>
 </nav>
 
 <body>
-    <div class="bgimg">
-        <div class="middle">
-            <h1>HUGO.VISUALS
-                <br> PRESET PACK</h1>
-             
-
-            <h3>COMING SOON</h1>
+    
+        <div class="comingsoon">
+            <p class="line anim-typewriter" id="first">HUGO.VISUALS  <br>PRESET PACK
+                <br> COMING SOON</p>
                 <hr>
-                <p id="demo" style="font-size: 30px"></p>
-
+            <p id="demo" style="font-size: 30px"></p>
         </div>
-    </div>
+        <script>
+    
+            var countDownDate = new Date("AUG 12, 2018 00:00:00").getTime();
+            var countDownfunction = setInterval(function () {
+    
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+    
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                document.getElementById("demo").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s";
+    
+                if (distance < 0) {
+                    clearInterval(countDownfunction);
+                    document.getElementById("demo").innerHTML = "HAPPY EDITING";
+                }
+            }, 1000);
+    
+    
+        </script>
+
 
     <script>
             window.sr = ScrollReveal();
-            sr.reveal('h1', {
+            sr.reveal('#first', {
                 duration: 1000,
                 delay: 200,
                 origin: 'top',
-                distance: '300px',
-                viewFactor: 0.2
-            });
-
-            sr.reveal('h3', {
-                duration: 1000,
-                delay: 200,
-                origin: 'bottom',
                 distance: '300px',
                 viewFactor: 0.2
             });
@@ -84,35 +98,6 @@
             });
     
         </script>
-
-    <script>
-
-        var countDownDate = new Date("AUG 12, 2018 00:00:00").getTime();
-        var countDownfunction = setInterval(function () {
-
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("demo").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s";
-
-            if (distance < 0) {
-                clearInterval(countDownfunction);
-                document.getElementById("demo").innerHTML = "HAPPY EDITING";
-            }
-        }, 1000);
-
-
-    </script>
-
-    
-
-
-
 
 </body>
 
