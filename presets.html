@@ -2,99 +2,183 @@
 <html lang="en">
 
 <head>
-    <title>Mainpage</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script src="https://use.fontawesome.com/be707ba40e.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="preset.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal@3.4.0/dist/scrollreveal.min.js"></script>
+
+    <title>Document</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar navbar-light bg-white fixed-top" id="mainnav">
-
-    <a class="navbar-brand" href="#">HUGO.VISUALS</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html"> PHOTOGRAPHY</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="web.html">WEB DEVELOPMENT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="aboutme.html">ABOUT ME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="presets.html">PRESETS</a>
-            </li>
-           
-        </ul>
-    </div>
-</nav>
-
 <body>
-    
-        <div class="comingsoon">
-            <p class="line anim-typewriter" id="first">HUGO.VISUALS  <br>PRESET PACK
-                <br> COMING SOON</p>
-                <hr>
-            <p id="demo" style="font-size: 30px"></p>
+
+    <div class="wrapper">
+        <nav class="navBar">
+            <a href="#">
+                <i class="fab fa-connectdevelop fa-2x" style="color: #0E0E0E;"></i>
+            </a>
+            <a href="#">
+            <img src="images2/menu.png" alt="menu-btn">
+            </a>
+        </nav>
+
+        <header>
+            <h1 class="anim">HUGO.VISUALS PRESET PACK</h1>
+            <p class="anim">This pack includes four of my favourite presets, suitable for all sorts of enviroments! Whether you're shooting
+                sunsets at the beach, day and night in the ubran cities, or exploring the world of nature, these presets will
+                take your photos to a whole new level.
+
+                <br>
+                <br> This pack is designed to be used with the desktop version of  <strong> Lightroom Classic CC.</strong> </p>
+
+                <div class="anim">
+                <button class="btn"> SHOP NOW </button>
+            </div>
+
+
+               
+        </header>
+
+       
+
+        <div class="work">
+            <img class="anim" src="images2/1.jpg" alt="preset img">
+            <img class="anim" src="images2/2.jpg" alt="preset img">
+            <img class="anim" src="images2/3.jpg" alt="preset img">
+            <img class="anim" src="images2/4.jpg" alt="preset img">
+
         </div>
-        <script>
-    
-            var countDownDate = new Date("AUG 12, 2018 00:00:00").getTime();
-            var countDownfunction = setInterval(function () {
-    
-                var now = new Date().getTime();
-                var distance = countDownDate - now;
-    
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-                document.getElementById("demo").innerHTML = days + "d" + hours + "h" + minutes + "m" + seconds + "s";
-    
-                if (distance < 0) {
-                    clearInterval(countDownfunction);
-                    document.getElementById("demo").innerHTML = "HAPPY EDITING";
-                }
-            }, 1000);
-    
-    
-        </script>
+
+        <div class="header2">
+            <h1 class="anim">PRESETS GALLERY</h1>
+            <p class="anim">For the past 3 months, I have been exploring from the eastern coast of Japan to the southernmost region of Africa. And this preset have proved its versitsity in all sort of environemnt, n=enojoy the GALLERY</p>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images2/image2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/image1.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/image3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/image4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/image5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/image6.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/image7.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/image8.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <br>
+
+          <div class="header3">
+            <h1 class="anim">HOW TO IMPORT PRESETS</h1>
+            <p class="anim">1. Make sure you have the desktop version of Adobe Lightroom installed. If not, you can download it HERE.</p>
+            <p class="anim">2. Extract the .zip folder by double-clicking it.</p>
+            <p class="anim">3. Open Lightroom, Click on the "Lightroom" (for Mac) or "Edit" (for Windows) tab at the top left, then click "Preferences"</p>
+            <p class="anim">4. Click on the "Presets" tab, then click "Show Lightroom Presets Folder", Navigate to: Lightroom > Develop Presets.</p>
+            <p class="anim">5. Copy the folders that were extracted into the "Develop Presets" folder</p>
+            <p class="anim">6. Extract the .zip folder by double-clicking it.</p>
+            <p class="anim">7. Close Lightroom and reopen Lightroom</p>
+            <p class="anim">8. Click the "Develop" module in the top right. Your presets will be displayed on the left side. Happy Editing!</p>
+        </div>
+          
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+              
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images2/demo.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/demo2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/demo3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/demo4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/demo5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images2/demo6.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
 
-    <script>
-            window.sr = ScrollReveal();
-            sr.reveal('#first', {
-                duration: 1000,
-                delay: 200,
-                origin: 'top',
-                distance: '300px',
-                viewFactor: 0.2
-            });
+        
+        <footer>
+            <p> Copyright© 2018, HUGO.VISUALS </p>
+        </footer>
 
-            sr.reveal('#demo', {
-                duration: 1200,
-                delay: 1200,
-                origin: 'bottom',
-                distance: '500px',
-                viewFactor: 0.2
-            });
-    
-        </script>
+    </div>
+
+    <script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.anim');
+
+
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 </body>
 
